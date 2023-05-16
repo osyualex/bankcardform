@@ -8,9 +8,9 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
-class bankcardformTest {
+class BankcardformTest {
     @Test
-    void FormAutomationTest() {
+    void formAutomationTest() {
         open("http://localhost:9999");
         $("[data-test-id = 'name'] input").setValue("Александр Соколов");
         $("[data-test-id = 'phone'] input").setValue("+79589999999");

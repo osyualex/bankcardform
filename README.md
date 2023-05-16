@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/jl1j8fsurb4bpsvv?svg=true)](https://ci.appveyor.com/project/osyualex/bankcardform)

@@ -17,7 +17,7 @@ class bankcardformTest {
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("chromedriver.chrome.driver", "./driver/chromedriver.exe");
+        System.setProperty("chromedriver.chrome.driver", "./bankcardform/driver/chromedriver.exe");
 
     }
 
@@ -42,9 +42,9 @@ class bankcardformTest {
         driver.findElement(By.cssSelector("[data-test-id = 'name'] input")).sendKeys("Александр Соколов");
         driver.findElement(By.cssSelector("[data-test-id = 'phone'] input")).sendKeys("+79589999999");
         driver.findElement(By.cssSelector("[data-test-id = 'agreement'] input")).click();
-        driver.findElement(By.tagName("button__text")).click();
+        driver.findElement(By.className("button__content")).click();
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-        String actual = driver.findElement(By.className("alert-success")).getText().trim();
+        String actual = driver.findElement(By.className("icon_theme")).getText().trim();
         assertEquals(expected, actual);
 
 
